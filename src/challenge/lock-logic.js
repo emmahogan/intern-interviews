@@ -1,3 +1,4 @@
+// Submission version
 const redirect = window.redirect
 
 const SECRET_COMBO = [1, 3, 5, 1]
@@ -7,7 +8,7 @@ const lockState = window.mobx.observable({
   wheels: [0, 0, 0, 0]
 })
 
-function changeDialValue (index, incrementBy) {
+function changeDialValue(index, incrementBy) {
   // Adjust the value of wheels at the given index by the amount specified by incrementBy
   lockState.wheels[index] += incrementBy
 
